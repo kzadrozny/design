@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
     <link rel="stylesheet" href="dist/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
@@ -31,13 +32,23 @@
                         <figcaption>Catalog Item Page reuses module color-coding and iconography</figcaption>
                         <img src="images/UCCatalog-RecordPage.jpg">
                     </figure>
-                    <figure>
+<!--                     <figure>
                         <figcaption>Interlibrary Loan Page: Before</figcaption>
                         <img src="images/Pre-Redesign_SFX-Article.png" alt="Before Redesign">
                     </figure>
                     <figure>
                         <figcaption>Interlibrary Loan Page: After</figcaption>
                         <img src="images/Redesign_SFX-Article_Smaller.png" alt="After Redesign">
+                    </figure> -->
+
+                    <figure>
+                        <figcaption>Interlibrary Loan Page: Before &amp; After</figcaption>
+                        <div id="slider" class="beer-slider" data-beer-label="before">
+                            <img src="images/Pre-Redesign_SFX-Article.png" alt="Before Redesign">
+                        <div class="beer-reveal" data-beer-label="after">
+                            <img src="images/Redesign_SFX-Article.png" alt="After Redesign">
+                        </div>
+                        </div>
                     </figure>
                 </div>
 
@@ -78,6 +89,10 @@
         </section>
     </main>
     <script src="js/jquery-2.1.1.js"></script>
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+    <script>
+        new BeerSlider(document.getElementById('slider'));
+    </script>
   </body>
 </html>
 	

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
     <link rel="stylesheet" href="dist/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
@@ -28,13 +29,22 @@
                         <figcaption>Each Library branch can customize their banner, news feed, and sidebar navigation.</figcaption>
                         <img src="images/LibraryWebsiteRedesign-Tablet.jpg" alt="Homepage shown on tablet">
                     </figure>
-                    <figure>
+<!--                     <figure>
                         <figcaption>Homepage: Before</figcaption>
                         <img src="images/Website_ScreenShotBEFORE.png" alt="Before Redesign">
                     </figure>
                     <figure>
                         <figcaption>Homepage: After</figcaption>
                         <img src="images/Crerar-Homepage_Redesign.png" alt="After Redesign">
+                    </figure> -->
+                    <figure>
+                        <figcaption>HomepPage: Before &amp; After</figcaption>
+                        <div id="slider" class="beer-slider" data-beer-label="before">
+                            <img src="images/Website_ScreenShotBEFORE.png" alt="Before Redesign">
+                        <div class="beer-reveal" data-beer-label="after">
+                            <img src="images/Crerar-Homepage_Redesign.png" alt="After Redesign">
+                        </div>
+                        </div>
                     </figure>
                 </div>
 
@@ -83,6 +93,10 @@
         </section>
     </main>
     <script src="js/jquery-2.1.1.js"></script>
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+    <script>
+        new BeerSlider(document.getElementById('slider'));
+    </script>
   </body>
 </html>
 	
