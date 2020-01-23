@@ -77,6 +77,14 @@ ul.plain-list {
   ul.plain-list li + li {
     margin-top: 1em; }
 
+ul.role-list {
+  list-style: none;
+  padding-left: 1.3em; }
+  ul.role-list li {
+    padding-left: 0.25em;
+    text-indent: -1.5em;
+    margin-bottom: 0.25em; }
+
 .descriptor, .project-type {
   font-family: "Lora", serif;
   font-size: 0.9rem;
@@ -343,11 +351,11 @@ section.object-page {
       margin-top: 0; }
     section.object-page h2 + ul {
       margin-top: 0.5em; }
-  section.object-page img {
+  section.object-page img:not(.thumbnail) {
     max-width: 700px; }
-  section.object-page ul {
+  section.object-page ul:not(.role-list) {
     padding-left: 20px; }
-    section.object-page ul li {
+    section.object-page ul:not(.role-list) li {
       margin-bottom: 1em; }
 
 figure {
@@ -355,8 +363,31 @@ figure {
 
 figcaption {
   font-family: "Lora", serif;
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 1rem;
   padding: 0.5em 0 0.5em 1em;
-  margin-top: 1em;
-  background: #daebe4; }
+  margin-top: 1em; }
+  figcaption .fa {
+    color: #477f68;
+    font-size: 1.1rem; }
+
+div.related {
+  background-color: #daebe4;
+  max-width: 250px;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 0.5em; }
+  div.related img.thumbnail {
+    max-width: 250px; }
+  div.related a {
+    text-decoration: none; }
+
+a.return {
+  font-size: 0.9rem;
+  text-decoration: none; }
+
+/*
+ * Before / After Slider
+ * --------------------------------------------------
+ */
+.beer-handle {
+  background: rgba(106, 175, 146, 0.79); }

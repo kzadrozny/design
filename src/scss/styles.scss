@@ -107,6 +107,16 @@ ul.plain-list {
   }
 }
 
+ul.role-list {
+  list-style: none;
+  padding-left: 1.3em;
+  li {
+    padding-left: 0.25em;
+    text-indent: -1.5em;
+    margin-bottom: 0.25em;
+  }
+}
+
 .descriptor {
   font-family: $accent-font; 
   font-size: 0.9rem;
@@ -425,10 +435,10 @@ section.object-page {
       margin-top: 0.5em;
     }
   }
-  img {
+  img:not(.thumbnail) {
     max-width: 700px;
   }
-  ul {
+  ul:not(.role-list) {
     padding-left: 20px;
     li {
       margin-bottom: 1em;
@@ -441,9 +451,41 @@ figure {
 }
 figcaption {
   font-family: $accent-font; 
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 1rem;
   padding: 0.5em 0 0.5em 1em;
   margin-top: 1em;
-  background: lighten($pop-color, 50%);
+  .fa {
+    color: $pop-color;
+    font-size: 1.1rem;
+  }
 }
+
+div.related {
+  background-color: lighten($pop-color, 50%);
+  max-width: 250px;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  img.thumbnail {
+    max-width: 250px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+a.return {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+
+ /*
+ * Before / After Slider
+ * --------------------------------------------------
+ */
+
+.beer-handle {
+    background: hsla(155, 30%, 55%, 0.79);
+  }
+

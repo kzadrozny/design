@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KZ: Map System Redesign</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://use.fontawesome.com/9c7d5ea8f4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/header-include.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
+  </head>
+  <body>
+    <header id="headernav"></header>
+
+    <main>
+        <section class="object-page">
+            <div class="third-column">
+                <span class="project-overview">
+                    <span class="project-type">Wayfinding &amp; UX Design</span>
+                    <h1>University of Chicago Library Map System Redesign</h1>
+                     <span class="descriptor">User testing and complete redesign the Library's floor maps.</span>
+                </span>
+                <div>
+                    <img src="images/FloorMaps_Reg_new.jpg" alt="printed map in holder">
+                    <figure>
+                        <figcaption><i class="fa fa-caret-down"></i> Consistent design through all Library branches</figcaption>
+                        <img src="images/FloorMap_Law.jpg" alt="5th floor map shown on laptop">
+                    </figure>
+
+                    <figure>
+                        <figcaption><i class="fa fa-caret-down"></i> Before / After</figcaption>
+                        <div id="slider" class="beer-slider">
+                            <img src="images/UChicago-Map_After.jpg" alt="After Redesign">
+                        <div class="beer-reveal">
+                            <img src="images/UChicago-Map_Before.jpg" alt="Before Redesign">
+                        </div>
+                        </div>
+                    </figure>
+                </div>
+
+                <div>
+                    <h2>Problem</h2>
+                    <p>The floor maps the University of Chicago was using had several usability issues for the staff and patrons. The Reading Room areas were separated from the Bookstacks, with the original intent to aid patrons in finding stacks materials. User testing proved that the separation of a floor into two parts confused our patrons and <span class="highlight">hindered their understanding</span> of the distinctions between these areas.</p>
+                    <p>The orientation of the two maps for one floor were both different, further <span class="highlight">disoriented users</span> and added to wayfinding frustrations for both our online and on-site maps. No key or visual cues were included to assign meaning to color assignments or distinct areas.</p>
+                    <h2>Solution</h2>
+                    <ul>
+                        <li>The two maps per floor were merged, creating one plan for each floor and utilized consistent placement for the compass and legend.</li>
+                        <li>A <span class="highlight">style guide was utilized</span> for uniform icons and color use throughout all floor maps for all library branches.</li>
+                        <li>User testing showed issues with reading call numbers, so we included a call number guide for the maps located in the bookstacks.</li>
+                        <li>Previous maps were <span class="highlight">evaluated for accessibility</span> on points such as color contrast, spatial accuracy, and cognitive reasoning, with the new maps meeting AA WCAG 2.1 standards</li>
+                        <li>Documentation was written to aid future map updates, including how we defined a wall and what items we chose to show versus what we didn’t include in maps.</li>
+                        <li>A <span class="highlight">slow roll out was coordinated</span>, with the updated maps first being uploaded online so we could gauge user feedback. Changes or issues found during the first academic quarter were rolled into the online maps and then used for the printed maps, which were produced and installed the following quarter.</li>
+                    </ul>
+                    <h2>Press</h2>
+                    <p><span class="highlight">Case study included in:</span><br/><em>Signage and Wayfinding for Libraries</em>, Mark Aaron Polger (forthcoming)</p>
+                    <h2>Roles</h2>
+                    <ul class="role-list">
+                        <li>Lead Designer</li>
+                        <li>UX / UI Designer</li>
+                    </ul>
+                    <h2>Similar Project</h2>
+                    <div class="related">
+                        <a href="p-thegreatescape.html"><img class="thumbnail" src="images/TGEOutdoor.jpg" alt="ads covering windows for the various items they sell"><br/>
+                        The Great Escape branding</a>
+                    </div>
+                    <p><hr>
+                    <a class="return" href="index.html#portfolio"><i class="fa fa-backward"></i> Return to portfolio</a></p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+    <script>
+        new BeerSlider(document.getElementById('slider'));
+    </script>
+  </body>
+</html>
+	

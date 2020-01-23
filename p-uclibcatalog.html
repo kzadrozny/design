@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kathy Zadrozny</title>
+    <title>KZ: UChicago Library Catalog</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://use.fontawesome.com/9c7d5ea8f4.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/header-include.js"></script>
+    <script type="text/javascript" src="js/header-include.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
   </head>
   <body>
     <header id="headernav"></header>
@@ -25,28 +29,18 @@
                 </span>
                 <div>
                     <img src="images/Library-Catalog_Tablet.jpg">
+                    
                     <figure>
-                        <figcaption>Interlibrary Loan page also shows local copies &amp; e-resources</figcaption>
+                        <figcaption><i class="fa fa-caret-down"></i> Item Request Page: Displays local copies &amp; e-resources</figcaption>
                         <img src="images/SFX-Redesign.jpg">
-                    <figure>
-                        <figcaption>Catalog Item Page reuses module color-coding and iconography</figcaption>
-                        <img src="images/UCCatalog-RecordPage.jpg">
                     </figure>
-<!--                     <figure>
-                        <figcaption>Interlibrary Loan Page: Before</figcaption>
-                        <img src="images/Pre-Redesign_SFX-Article.png" alt="Before Redesign">
-                    </figure>
-                    <figure>
-                        <figcaption>Interlibrary Loan Page: After</figcaption>
-                        <img src="images/Redesign_SFX-Article_Smaller.png" alt="After Redesign">
-                    </figure> -->
 
                     <figure>
-                        <figcaption>Interlibrary Loan Page: Before &amp; After</figcaption>
-                        <div id="slider" class="beer-slider" data-beer-label="before">
-                            <img src="images/Pre-Redesign_SFX-Article.png" alt="Before Redesign">
-                        <div class="beer-reveal" data-beer-label="after">
+                        <figcaption><i class="fa fa-caret-down"></i> Before / After (Item Request Page)</figcaption>
+                        <div id="slider" class="beer-slider">
                             <img src="images/Redesign_SFX-Article.png" alt="After Redesign">
+                        <div class="beer-reveal">
+                            <img src="images/Pre-Redesign_SFX-Article.png" alt="Before Redesign">
                         </div>
                         </div>
                     </figure>
@@ -54,35 +48,43 @@
 
                 <div>
                     <h2>Problem</h2>
-                    <p>Patrons were having issues determining if the specific copy or volume needed was available in the Library. They often also overlooked any online or ebook version of their items, missing that they could view the material immediately. Online articles were often listed multiple times (due to subscription platforms), complicating which link the patron felt they should choose.</p>
-                    <p>Additionally, the Interlibrary Loan (ILL) page to request an item from another Library forced the patron to choose between our four different ILL services. There was no guarantee that any of the services had their item available for request, creating a arduous and frustration series of tasks.</p>
+                    <p>Requesting library items was an arduous and frustrating series of tasks.</p>
+                    <p>Users were asked to choose between four different ILL services without knowing which service had the item they needed. Patrons had issues determining if items were available, often overlooking online editions. Multiple subscription platforms resulted in duplicate listings of online articles, leading users to choice paralysis.</p>
                     <h2>Solution</h2>
                     <ul>
-                        <li>Working with the Interlibrary Loan page first, we worked with <span class="highlight">simplifying how to get the material</span> was displayed. We use three modules to show online access, copies in the Library, and ILL options.</li>
+                        <li><span class="highlight">Informed by user testing</span>, we simplified the Interlibrary Loan page, segmenting the options into three choices: online access, copies in the Library, and Interlibrary Loan (ILL).</li>
                         <li>Online resources are deduped so that only the best e-resource link is displayed to the patron, <span class="highlight">getting rid of choice paralysis</span>.</li>
-                        <li>Local copies of the material are shown in the next module, with Catalog data showing the availability as well as a "Scan &amp; Deliver" link.</li>
-                        <li>Including availability and the "Scan &amp; Deliver" link allows the patron to request a PDF of the item without having to navigate to a new page.</li>
-                        <li>We switched to simply having one "Request from Interlibrary Loan" link rather than making the patron choose. With ILL staff choosing the best service, we were able to favor lending institutions with reciprocal agreements, thus <span class="highlight">saving the Library money</span>.</li>
-                        <li>If an item is not available in any of the respective mediums, we have help text that allows the patron to search via a global catalog, return to our Catalog, or fill out an ILL request form manually. This assures the ILL page is <span class="highlight">not a dead end and helps</span> the patron to get the materials they need.</li>
-                        <li>The media module layout, color coding, and iconography used in the ILL page is also used in the Catalog to maintain consistency.</li>
+                        <li><span class="highlight">Easily scannable</span>: item availability integrated from Catalog database, with unavailable items clearly shown.</li>
+                        <!-- <li>If item is checked out, a "Scan &amp; Deliver" link is displayed, allowing the patron to request a PDF without navigating to a new page.</li> -->
+                        <li><span class="highlight">Updated workflow</span> to one ILL link, "Request from Interlibrary Loan," removing the action of the patron choosing the outside source.</li>
+                        <li>Behind the scenes, ILL staff choose the best service, favoring lending institutions with reciprocal agreements, thus <span class="highlight">saving the Library money</span>.</li>
+                        <li><span class="highlight">Improved user flow</span> by allowing several escape hatches if the item is not available: search via a global catalog, return to our Catalog, or fill out an ILL request form.</li>
+                        <li>The three module options, color coding, and iconography used in the ILL page is also used in the Catalog to <span class="highlight">maintain consistency</span>.</li>
                     </ul>
                     <h2>Impact</h2>
                     <ul>
-                        <li>Patron interviews have shown changed their view of Interlibrary Loan from being a slow and arduous service to one that is <span class="highlight">quick and seamless</span>.</li>
-                        <li>The data is being displayed closer to how it is stored in the Catalog database, allowing us to remove delicate customizations and <span class="highlight">speed-up debugging</span> when record-specific errors occur.</li>
+                        <li>User interviews have shown a improved view of Interlibrary Loan from being a slow and arduous service to one that is <span class="highlight">quick and seamless</span>.</li>
+                        <li>Catalog data displayed on the front end mirrors the Catalog database, allowing us to remove delicate customizations and <span class="highlight">speed-up debugging</span> when record-specific errors occur.</li>
                     </ul>
                     <h2>Roles</h2>
-                    <ul class="plain-list">
+                    <ul class="role-list">
                         <li>Front End Developer</li>
                         <li>Lead Designer</li>
                         <li>UX / UI Designer</li>
                     </ul>
                     <h2>Languages Used</h2>
-                    <ul class="plain-list">
+                    <ul class="role-list">
                         <li>CSS / Sass</li>
                         <li>HTML</li>
                         <li>JavaScript</li>
                     </ul>
+                    <h2>Related Project</h2>
+                    <div class="related">
+                        <a href="p-UCCollex.html"><img class="thumbnail" src="images/WebExhibit-ChildPage_Laptop.jpg" alt="Web exhibit shown on a large monitor"><br/>
+                        UChicago Library Exhibit & Collection Integration</a>
+                    </div>
+                    <p><hr>
+                    <a class="return" href="index.html#portfolio"><i class="fa fa-backward"></i> Return to portfolio</a></p>
                 </div>
 
             </div>

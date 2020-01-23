@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kathy Zadrozny</title>
+    <title>KZ: Exhibit & Collection Integration</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://use.fontawesome.com/9c7d5ea8f4.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/header-include.js"></script>
+    <script type="text/javascript" src="js/header-include.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
   </head>
   <body>
     <header id="headernav"></header>
@@ -20,44 +25,37 @@
                 <span class="project-overview">
                     <span class="project-type">Communication Design</span>
                     <h1>University of Chicago Library Exhibit &amp; Collection Integration</h1>
-                     <span class="descriptor">Template redesign, data migration, promotional marketing, and staff training.</span>
+                     <span class="descriptor">Template redesign, data integration, and staff training.</span>
                 </span>
                 <div>
                     <img src="images/WebExhibit-ChildPage_Laptop.jpg" alt="">
                     <figure>
-                        <figcaption>Banner, color scheme, and sidebar can be customized</figcaption>
-                        <img src="images/WebExhibit-HomePage_Laptop.jpg" alt="">
+                        <figcaption><i class="fa fa-caret-down"></i> iiif and Universal Viewer are utilized for page-turning, zooming, and downloads</figcaption>
+                        <img src="images/Collection_ObjectPage.jpg" alt="">
                     </figure>
                     <figure>
-                        <figcaption>Banner design is expanded to all exhibit materials</figcaption>
-                        <img src="images/JamesBaldwinExhibit.jpg" alt="">
+                        <figcaption><i class="fa fa-caret-down"></i> User flow to capture the journey from collections, objects, and exhibits.</figcaption>
+                        <img src="images/User-Flow_DigitalCollections_Maps.jpg" alt="">
                     </figure>
-                    <figure>
-                        <figcaption>Cohesive promotion, unique to the exhibit, is used for all medias.</figcaption>
-                        <img src="images/Balwin_SocialMedia.jpg" alt="">
-                    </figure>
-                    <!-- <img src="images/James-Baldwin_TechBarSlide.jpg" alt=""> -->
                 </div>
 
                 <div>
                     <h2>Problem</h2>
-                    <p>Online exhibits were one-off microsites that involved creating new templates for each exhibit. This required expansive developer time and made the curators feel helpless in the creation of their exhibit. Separate templates also created incongruities between exhibits, leaving users confused when navigating between them. Information between exhibits was also siloed, not allowing us to easily connected to related collections or materials.</p>
-                    <p>Promotion for exhibits was normally non-existent or rarely matched the style for the exhibit itself. Since curators didn't understand the process for creating the web pages, they did not feel empowered to make edits or add materials.</p>
+                    <p>Online exhibits were one-off microsites that involved creating new templates for each exhibit. This required expansive developer time, made the curators feel helpless in the creation of their exhibit, and incongruities between exhibits. Collections were of a same unique and siloed affair, not letting users see the full breadth of the University's collections.</p>
+                    <p>Information between collection and exhibits was also siloed, not allowing connections between related materials.</p>
                     <h2>Solution</h2>
                     <ul>
-                        <li>Our website base template was expanded upon to accommodate the unique needs of web exhibits, such as larger images, expansive captioning, and unique color pallets.</li>
+                        <li>Leveraging our Wagtail Django templates, we integrated  <span class="highlight">Catalog metadata and iif manifests</span> to create dynamic views of our collection materials.</li>
+                        <li>Dynamic relationships are created between collections and exhibits and <span class="highlight">automatically populated</span> by matching the subject assignments.</li>
+                        <li><span class="highlight">Enabling user exploration</span> via the sidebar browse, allows navigation through related subject materials without limitations.</li>
                         <li>Using <span class="highlight">Sass shade and tint variations</span>, the curator is able to input one color hex in the CMS form and the Sass code will produce a color scheme for the entire web exhibit.</li>
                         <li>Sass-powered <span class="highlight">dynamic styling</span> allows for each exhibit to have a unique look, while maintaining the Library's branding and style guidelines.</li>
-                        <li>The expanded templates allows for a hero image that <span class="highlight">creates a mood for the exhibit</span>, which is then reused in promotional materials.</li>
-                        <li>Sidebar navigation allows users to navigate within the exhibit while still having the main Library website at the top and bottom, orienting them and branding the work as a University exhibit.</li>
-                        <li>I <span class="highlight">led training sessions</span> for Curators and Librarians on how to create web exhibits using the new templates, as well as workshops on writing for the web, and organizing visual content for social media.</li>
-                        <li>The right sidebar includes related materials to the exhibit that are <span class="highlight">automatically populated</span> by matching the subject assignments for the exhibit.</li>
+                        <li>Developer led training sessions, clear documentation, and workshops gave Curators and Librarians confidence in creating their own web exhibits and digital collections using the new templates.</li>
                     </ul>
                     <h2>Impact</h2>
                     <ul>
                         <li>The easier to use templates, simplified design creation, and training sessions helped make the <span class="highlight">curators feel empowered</span> to create their online exhibits are they wanted.</li>
                         <li>Creating subject snippets as the connection between collections and exhibits has <span class="highlight">increased cross-material browsing</span> on the website. It also showcases the diversity of the Library's collections.</li>
-                        <li>A <span class="highlight">unified branding campaign</span> for each exhibit allows for recognizable and consistent materials across all platforms that are unique for each exhibit.</li>
                     </ul>
                     <h2>Roles</h2>
                     <ul class="plain-list">
@@ -67,16 +65,23 @@
                         <li>Social Media Marketing &amp; Designer</li>
                     </ul>
                     <h2>Languages Used</h2>
-                    <ul class="plain-list">
+                    <ul class="role-list">
                         <li>CSS / Sass</li>
                         <li>Django</li>
                         <li>HTML</li>
                         <li>JavaScript</li>
                     </ul>
                     <h2>Code Example</h2>
-                    <ul class="plain-list">
+                    <ul class="role-list">
                         <li><a href="https://github.com/uchicago-library/library_website/blob/master/lib_collections/templates/lib_collections/exhibit_page.html">Web Exhibit Parent Page</a> (GitHub)</li>
                     </ul>
+                    <h2>Related Project</h2>
+                    <div class="related">
+                        <a href="p-uclibweb.html"><img class="thumbnail" src="images/LibraryWebsiteRedesign.jpg" alt="Homepage shown on a large monitor"><br/>
+                        University of Chicago Library Website</a>
+                    </div>
+                    <p><hr>
+                    <a class="return" href="index.html#portfolio"><i class="fa fa-backward"></i> Return to portfolio</a></p>
                 </div>
 
             </div>

@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kathy Zadrozny</title>
+    <title>KZ: BMRC Website</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://use.fontawesome.com/9c7d5ea8f4.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/header-include.js"></script>
+    <script type="text/javascript" src="js/header-include.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
   </head>
   <body>
     <header id="headernav"></header>
@@ -18,41 +23,78 @@
         <section class="object-page">
             <div class="third-column">
                 <span class="project-overview">
-                    <span class="project-type">Publication Design</span>
-                    <h1>Black Metropolis Research Consortium Strategic Plan</h1>
-                     <span class="descriptor">Branding, promotion, and information organization.</span>
+                    <span class="project-type">Product Management &amp; Development</span>
+                    <h1>Black Metropolis Research Consortium</h1>
+                     <span class="descriptor">Project planning, Django development, and information organization.</span>
                 </span>
                 <div>
-                    <img src="images/BMRC-Cover.jpg">
-                    <img src="images/BMRC-Inside.jpg">
+                    <img src="images/BMRC-Homepage.jpg">
+
+                    <figure>
+                        <figcaption><i class="fa fa-caret-down"></i> User testing at the Annual Meeting</figcaption>
+                        <img src="images/BMRC_AnnualMeeting_2019.jpg">
+                    </figure>
+
+                    <figure>
+                        <figcaption><i class="fa fa-caret-down"></i> Before / After</figcaption>
+                        <div id="slider" class="beer-slider">
+                            <img src="images/BMRC_New.jpg" alt="After Redesign">
+                        <div class="beer-reveal">
+                            <img src="images/BMRC_Old.png" alt="Before Redesign">
+                        </div>
+                        </div>
+                    </figure>
                 </div>
 
                 <div>
                     <h2>Problem</h2>
-                    <p>The Black Metropolis Research Consortium (BMRC) didn't have a specific style or brand, but they wanted to create an inviting Strategic Plan. They needed a design that look engaging and dynamic with a layout that showcased their archival materials, member institutions, and wealth of events.</p>
+                    <p>The Black Metropolis Research Consortium's (BMRC) website was out of date, taking between 8-10 seconds to load, and hosted on an insecure Wordpress instance. Information conflicted itself and users found it hard to locate content.</p>
                     <h2>Solution</h2>
                     <ul>
-                        <li>Using tints of the colors from their logo, I created a warm and welcoming color palette</li>
-                        <li>Blocks of shapes and images segmented the dense amount of information into <span class="highlight">easily readable</span> and digestible sections.</li>
-                        <li>Placing the images into geometric shapes lent a <span class="highlight">uniform look to images</span> that were taken over a series of years at various BMRC events.</li>
-                        <li>This uniformity allowed for archival images to be integrated with contemporary images while created a link between the organization, their events, and their collections.</li>
-                        <li>The dynamic shapes imbued the message of action and <span class="highlight">forward momentum</span> that the organization was capturing with their strategic plan.</li>
+                        <li>Built a custom Wagtail CMS instance with a Bulma framework, stripping away historical requirements that were no longer useful.</li>
+                        <li>Built in <span class="highlight">WCAG 2.1 AAA compliance</span> into the templates, allowing the web author to simply have to focus on content.</li>
+                        <li>Utilized <span class="highlight">spec punchlist</span> and client review process to develop and migrate the site on deadline.</li>
+                        <li>Used <span class="highlight">fragment caching</span> to cache module level items to help speed-up load time to limit server calls.</li>
                     </ul>
                     <h2>Impact</h2>
                     <ul>
-                        <li>The design and layout was so well-received by the stakeholders and their community that the organization <span class="highlight">adopted this look</span> for further printed material.</li>
+                        <li><span class="highlight">Speed improvement</span> from 8.2 seconds to 1.1 second load time.</li>
                     </ul>
                     <h2>Roles</h2>
-                    <ul class="plain-list">
-                        <li>Art Director</li>
-                        <li>Lead Designer</li>
+                    <ul class="role-list">
+                        <li>Project Manager</li>
+                        <li>UX / UI Designer</li>
+                        <li>Front End Designer</li>
+                        <li>Lead Developer</li>
                     </ul>
+                     <h2>Languages Used</h2>
+                    <ul class="role-list">
+                        <li>Sass</li>
+                        <li>Django</li>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h2>Code</h2>
+                    <ul>
+                        <li><a href="https://github.com/uchicago-library/bmrc">BMRC Repository</a> (GitHub)</li>
+                    </ul>
+                    <h2>Similar Project</h2>
+                    <div class="related">
+                        <a href="p-wayfinding.html"><img class="thumbnail" src="images/FloorMap_Law.jpg" alt="5th floor map shown on laptop"><br/>
+                        UChicago Library Map System Redesign</a>
+                    </div>
+                    <p><hr>
+                    <a class="return" href="index.html#portfolio"><i class="fa fa-backward"></i> Return to portfolio</a></p>
                 </div>
 
             </div>
         </section>
     </main>
     <script src="js/jquery-2.1.1.js"></script>
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+    <script>
+        new BeerSlider(document.getElementById('slider'));
+    </script>
   </body>
 </html>
 	

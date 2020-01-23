@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kathy Zadrozny</title>
+    <title>KZ: UChicago Library Website</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://use.fontawesome.com/9c7d5ea8f4.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/header-include.js"></script>
+    <script type="text/javascript" src="js/header-include.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
   </head>
   <body>
     <header id="headernav"></header>
@@ -26,23 +30,21 @@
                 <div>
                     <img src="images/LibraryWebsiteRedesign.jpg" alt="Homepage shown on a large monitor">
                     <figure>
-                        <figcaption>Each Library branch can customize their banner, news feed, and sidebar navigation.</figcaption>
+                        <figcaption><i class="fa fa-caret-down"></i> Customizable Library branch pages.</figcaption>
                         <img src="images/LibraryWebsiteRedesign-Tablet.jpg" alt="Homepage shown on tablet">
                     </figure>
-<!--                     <figure>
-                        <figcaption>Homepage: Before</figcaption>
-                        <img src="images/Website_ScreenShotBEFORE.png" alt="Before Redesign">
+
+                    <figure>
+                        <figcaption><i class="fa fa-caret-down"></i> User testing pre-development &amp; post-launch</figcaption>
+                        <img src="images/Pre-Post-Testing.jpg" alt="Overhead photo of a participant doing card sorting">
                     </figure>
+
                     <figure>
-                        <figcaption>Homepage: After</figcaption>
-                        <img src="images/Crerar-Homepage_Redesign.png" alt="After Redesign">
-                    </figure> -->
-                    <figure>
-                        <figcaption>HomepPage: Before &amp; After</figcaption>
-                        <div id="slider" class="beer-slider" data-beer-label="before">
-                            <img src="images/Website_ScreenShotBEFORE.png" alt="Before Redesign">
-                        <div class="beer-reveal" data-beer-label="after">
+                        <figcaption><i class="fa fa-caret-down"></i> Before / After</figcaption>
+                        <div id="slider" class="beer-slider">
                             <img src="images/Crerar-Homepage_Redesign.png" alt="After Redesign">
+                        <div class="beer-reveal">
+                            <img src="images/Website_ScreenShotBEFORE.png" alt="Before Redesign">
                         </div>
                         </div>
                     </figure>
@@ -50,33 +52,35 @@
 
                 <div>
                     <h2>Problem</h2>
-                    <p>The University of Chicago's website had not been changed in twelve years, leading to stale and repetitive content that was <span class="highlight">not mobile friendly or ADA compliant</span>. The CMS was being retired, so we needed to find a new platform that we could be supported in-house and allow for all librarians to edit and add to as needed.</p>
+                    <p>Twelve years out of date, the University of Chicago's website accumulated stale and repetitive content that was <span class="highlight">not mobile friendly or ADA compliant</span>. The CMS was being retired, so we needed to find a new platform that could be supported in-house and allow for our 350+ staff to edit and add content.</p>
                     <p>The website was text-heavy with patrons only using small and specific parts of the <span class="highlight">siloed content</span>. Additionally, each of the five library branches had their own look as well as duplicative information that sometimes contradicted itself.</p>
                     <h2>Solution</h2>
                     <ul>
                         <li>The homepage was segmented into visually-appealing modules that <span class="highlight">quickly show the services and events of the Library</span>.</li>
-                        <li>Highly-used services, such as booking a study room, were prominently placed and easy to access.</li>
-                        <li>Due to the size of the website, Bootstrap framework was utilized, but was customized with em-based media queries using Sass calculations.</li>
-                        <li>Multiple <span class="highlight">user experience tests</span> found which types of layouts and information patrons preferred and enhanced their research experience. This data along with student and faculty interviews allowed us to assess all the needs for the campus' various uses of the site.</li>
-                        <li>Creation of a <span class="highlight">pattern library</span> assured a cohesive interface look that allowed for reusable building blocks and clean code. This allowed for each library branch to have their own homepage with content that appealed to their patrons while also maintaining a cohesive brand.</li>
-                        <li>Reusable data blocks were implemented in, with content automatically placed on a page based on template type or body class assignment. This allows for <span class="highlight">consistent and accurate information</span> that only needs to be edited in one spot.</li>
+                        <li>Integration of third-party APIs, allowing "Ask a Librarian" chats and other highly-used services be embedded within related site content.</li>
+                        <li>Multiple <span class="highlight">user interviews and tests</span> informed layouts, content priority, and how to enhanced their research experience.</li>
+                        <li>Creation of a <span class="highlight">pattern library</span> assured a cohesive interface, and reusable modules, allowing for customizable pages that maintain a cohesive brand.</li>
+                        <li>Data blocks are reusable cross-app, integrating local and third-party data. Data is changed in one source, cascading to linked modules, with all information remaining <span class="highlight">consistent and accurate</span>.</li>
                         <li><span class="highlight">ADA compliance</span> is baked into the templates, using WCAG 2.0 Level AA accessibility conformance, and continues to be updated as new guidelines are introduced.</li>
                     </ul>
                     <h2>Impact</h2>
                     <ul>
-                        <li>This new layout expanded the use of the website from patrons only interacting with the search box to fully <span class="highlight">interacting with all elements</span> on the page.</li>
-                        <li>Reference service use <span class="highlight">increased</span> both online and in person.</li>
-                        <li><span class="highlight">Click-throughs increased</span> to news stories.</li>
+                        <li><span class="highlight">82% increase in homepage user events</span>, with patrons moving beyond the catalog search box to fully interacting with all elements</span> on the page.</li>
+                        <li>Reference service use increased both with online chats and in person consultations.</li>
+                        <li><span class="highlight">37% click-through increase</span> to news stories.</li>
                         <li>A complete site audit of all 8,000 web pages were triaged in order of migration importance. Deletion of redundant pages and reusable data modules allowed us to <span class="highlight">reduce the website</span> to 2,000 pages.</li>
                     </ul>
+                    <h2>Press</h2>
+                    <p><span class="highlight">Case study included in:</span><br/>
+                        "Improving Library Websites Products to enhance your online presence," <em>American Libraries</em> magazine (2017).</p>
                     <h2>Roles</h2>
-                    <ul class="plain-list">
+                    <ul class="role-list">
                         <li>Front End Developer</li>
                         <li>Lead Designer</li>
                         <li>UX / UI Designer</li>
                     </ul>
                     <h2>Languages Used</h2>
-                    <ul class="plain-list">
+                    <ul class="role-list">
                         <li>CSS / Sass</li>
                         <li>Django</li>
                         <li>HTML</li>
@@ -87,6 +91,12 @@
                         <li><a href="https://github.com/uchicago-library/library_website/blob/master/base/static/base/css/_media.scss">Custom Media Queries</a> (GitHub)</li>
                         <li><a href="https://github.com/uchicago-library/library_website/blob/master/base/static/base/css/uclib.scss">Main Sass File</a> (GitHub)</li>
                     </ul>
+                    <h2>Similar Project</h2>
+                    <div class="related">
+                        <a href="p-BMRC.html"><img class="thumbnail" src="images/BMRC-Homepage.jpg" alt="Homepage shown on a large monitor"><br/>BMRC Website</a>
+                    </div>
+                    <p><hr>
+                    <a class="return" href="index.html#portfolio"><i class="fa fa-backward"></i> Return to portfolio</a></p>
                 </div>
 
             </div>
