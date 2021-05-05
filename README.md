@@ -1,14 +1,5 @@
-## Who
-Kathy Zadrozny is a Web Developer and Graphic Design Specialist at the University of Chicago Library. She specializes in mobile and accessible web design and co-founded the world-wide organization, [The Letter Writers Alliance] (http://www.letterwriters.org).
+Specializing in user interfaces and accessibility Kathy Zadrozny (she/her) builds applications that serve patrons of all backgrounds and abilities. She crafts workshops and lectures that engage attendees in creating accessible communities</span> within their work and institutions. Her lectures have taken her to worldwide conferences like Designing for Digital, UXLibs, and Code4Lib.
 
-## What
-Kathy Zadrozny and John Jung, "Brainstorming and Prototyping Workshop" Library UX Chicago, Chicago, IL. August 19, 2016.
-[View workshop slides]
+She has published chapters in the books User Experience in Libraries Yearbook 2017: stories, techniques, insights(2017) and We Can Do I.T.: Women in Library Information Technology(2018). Kathy's projects have garnered attention from BBC World Service, NPR, *RedEye*, and *Gapers Block*. She has also been featured in the books *Good Mail Day*, and *Craft Business Heroes*.
 
-John Jung and Kathy Zadrozny, "From User Testing to Prototypes: Making Observations Tangible." Designing for Digital, Austin, TX. April 6, 2016.
-[View workshop slides] (https://kzadrozny.github.io/d4d/#/)
-
-Kathy Zadrozny and John Jung, "What was she pointing at when she said that?" Library UX Chicago's Web Usability Testing Pop-Up Lab, Chicago, IL. November 10, 2015.
-
-## Elsewhere
-You can find Kathy on [Instagram] (https://www.instagram.com/16sparrows/), [Twitter] (https://twitter.com/_kzadrozny), and at [kzadrozny.com] (http://kzadrozny.com/)
+You can find Kathy at [kzadrozny.com] (http://kzadrozny.com/) and slides from her lectures and events at [kzadrozny.github.io](https://kzadrozny.github.io).
